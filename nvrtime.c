@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 	FILE *f;
 
 	if (argc > 3 && strcmp(argv[1], "-o") == 0) {
-		char *begin = argv[1];
+		char *begin = argv[2];
 		char *end;
 		int y = strtol(begin, &end, 10);
 		if (begin != end) year_offset = y;
